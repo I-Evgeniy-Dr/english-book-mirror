@@ -1,0 +1,54 @@
+/* Font */
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-weight: 900;
+}
+h3 {
+  font-weight: 500;
+}
+/* Скрывает маркеры списков */
+.list {
+  list-style: none;
+}
+/* Скрывает наименования секций */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Удаляет подчёркивание ссылок */
+.link-decoration a {
+  text-decoration: none;
+}
+/* Border for header */
+.header-border {
+  border: 3px solid #ff5757;
+}
+/* Border for main */
+.main-border {
+  border: 3px solid #5271ff;
+}
+.footer-border {
+  border: 3px solid #ff5757;
+}
+.logo {
+  color: #ff5757;
+  font-family: "Comforter Brush", cursive;
+  font-size: 24px;
+}
+.logo-blue {
+  color: #5271ff;
+}
+.logo-red {
+  color: #ff5757;
+}

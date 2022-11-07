@@ -33,7 +33,7 @@
       href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./../../css/styles.css" />
   </head>
   <!-- Flow content -->
   <!-- (body) Містить вміст майбутньої веб-сторінки. Контент,
@@ -47,7 +47,7 @@
       <!-- (a) Посилання - це рядковий елемент -->
       <!-- Атрибут href - адреса сторінки, на яку перейде користувач
                 після натискання на текст посилання -->
-      <a class="logo" href="/mirrorru.html"
+      <a class="logo" href="../../mirrorru.html"
         >Английский<span class="logo-blue"> язык</span></a
       >
       <!-- Navigation -->
@@ -60,9 +60,11 @@
                         дітьми якого можуть бути тільки
                         елементи списку - теги <li>. -->
         <ul class="list">
-          <li><a href="/mirrorru.html">Главная</a></li>
-          <li><a href="/lessons/lessonsru.html">Уроки</a></li>
-          <li><a href="/applications/applicationsru.html">Приложения</a></li>
+          <li><a href="../../mirrorru.html">Главная</a></li>
+          <li><a href="../lessonsru.html">Уроки</a></li>
+          <li>
+            <a href="../../applications/applicationsru.html">Приложения</a>
+          </li>
         </ul>
       </nav>
       <!-- Інтерактивний елемент, який оживляється
@@ -83,8 +85,15 @@
         <!-- Тег <h1> найчастіше використовується тільки один раз,
                         як основний заголовок сторінки -->
         <h1>Урок 1</h1>
+        <ul class="list">
+          <li><a href="#reading-rules">Правила чтения</a></li>
+          <li><a href="#grammar">Грамматика</a></li>
+          <li><a href="#practice">Практика</a></li>
+          <li><a href="#test">Контрольная работа</a></li>
+        </ul>
+        <!-- Reading rules -->
         <section>
-          <h2 class="visually-hidden">Правила чтения</h2>
+          <h2 id="reading-rules" class="visually-hidden">Правила чтения</h2>
           <section>
             <h3>Буква, звук, фонетический знак</h3>
             <p>
@@ -131,61 +140,65 @@
             </h3>
             <p>Запомните следующие буквы и обозначаемые ими звуки:</p>
             <table>
-              <tr>
-                <td>Буква</td>
-                <td>Обозначает звук</td>
-                <td>Соответствует русскому</td>
-              </tr>
-              <tr>
-                <td>В b</td>
-                <td>[b]</td>
-                <td>[Б]</td>
-              </tr>
-              <tr>
-                <td>D d</td>
-                <td>[d]</td>
-                <td>[Д]</td>
-              </tr>
-              <tr>
-                <td>F f</td>
-                <td>[f]</td>
-                <td>[Ф]</td>
-              </tr>
-              <tr>
-                <td>K k</td>
-                <td>[k]</td>
-                <td>[Х]</td>
-              </tr>
-              <tr>
-                <td>M m</td>
-                <td>[m]</td>
-                <td>[М]</td>
-              </tr>
-              <tr>
-                <td>N n</td>
-                <td>[n]</td>
-                <td>[Н]</td>
-              </tr>
-              <tr>
-                <td>P p</td>
-                <td>[p]</td>
-                <td>[П]</td>
-              </tr>
-              <tr>
-                <td>T t</td>
-                <td>[t]</td>
-                <td>[Т]</td>
-              </tr>
-              <tr>
-                <td>V v</td>
-                <td>[v]</td>
-                <td>[В]</td>
-              </tr>
-              <tr>
-                <td>Z z</td>
-                <td>[z]</td>
-                <td>[З]</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>Буква</th>
+                  <th>Обозначает звук</th>
+                  <th>Соответствует русскому</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>В b</td>
+                  <td>[b]</td>
+                  <td>[Б]</td>
+                </tr>
+                <tr>
+                  <td>D d</td>
+                  <td>[d]</td>
+                  <td>[Д]</td>
+                </tr>
+                <tr>
+                  <td>F f</td>
+                  <td>[f]</td>
+                  <td>[Ф]</td>
+                </tr>
+                <tr>
+                  <td>K k</td>
+                  <td>[k]</td>
+                  <td>[Х]</td>
+                </tr>
+                <tr>
+                  <td>M m</td>
+                  <td>[m]</td>
+                  <td>[М]</td>
+                </tr>
+                <tr>
+                  <td>N n</td>
+                  <td>[n]</td>
+                  <td>[Н]</td>
+                </tr>
+                <tr>
+                  <td>P p</td>
+                  <td>[p]</td>
+                  <td>[П]</td>
+                </tr>
+                <tr>
+                  <td>T t</td>
+                  <td>[t]</td>
+                  <td>[Т]</td>
+                </tr>
+                <tr>
+                  <td>V v</td>
+                  <td>[v]</td>
+                  <td>[В]</td>
+                </tr>
+                <tr>
+                  <td>Z z</td>
+                  <td>[z]</td>
+                  <td>[З]</td>
+                </tr>
+              </tbody>
             </table>
             <p>
               H h обозначает звук [h], который близок русскому [Х], но
@@ -388,7 +401,7 @@
         </section>
         <!-- Grammar -->
         <section>
-          <h2>Грамматика</h2>
+          <h2 id="grammar">Грамматика</h2>
           <ol>
             <li>
               Артикль
@@ -481,8 +494,10 @@
             </li>
           </ol>
         </section>
+        <!-- Practice -->
         <section>
-          <h2 class="visually-hidden">Практика</h2>
+          <h2 id="practice" class="visually-hidden">Практика</h2>
+          <!-- Text -->
           <section>
             <h3>Текст</h3>
             <p>
@@ -544,7 +559,7 @@
         </section>
         <!-- Test -->
         <section>
-          <h2>Контрольная работа</h2>
+          <h2 id="test">Контрольная работа</h2>
           <p>Ответьте на следующие вопросы:</p>
           <ol>
             <li>Что такие закрытый и открытый слоги?</li>
@@ -583,13 +598,13 @@
                 Може бути кілька на сторінці -->
     <footer class="footer-border">
       <!-- Logo -->
-      <a class="logo" href="../mirrorru.html"
+      <a class="logo" href="../../mirrorru.html"
         ><span class="logo-blue">Английский</span> язык</a
       >
       <ul>
-        <li><a href="/index.html">Ук</a></li>
-        <li><a href="/mirrorru.html">Ру</a></li>
-        <li><a href="/mirroren.html">En</a></li>
+        <li><a href="../../index.html">Ук</a></li>
+        <li><a href="../../mirrorru.html">Ру</a></li>
+        <li><a href="../../mirroren.html">En</a></li>
       </ul>
     </footer>
   </body>

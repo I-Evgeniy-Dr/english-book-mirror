@@ -31,3 +31,4 @@ Book for independent study of English
 23/10/2022
 
 1. Added content to lessons-tow page (section "Grammar").
+2. Added padding and margin to class .footer-border, .header-border and .main-border in styles.css file.
